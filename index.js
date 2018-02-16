@@ -78,10 +78,6 @@ function prepare(props) {
   // React-Native svg provides as a default of `xMidYMid` if aspectRatio is not
   // specified with align information. So we need to support this behavior and
   // correctly default to `xMidYMid [mode]`.
-  //
-  if ('preserveAspectRatio' in clean && !~clean.preserveAspectRatio.indexOf(' ')) {
-    clean.preserveAspectRatio = 'xMidYMid ' + clean.preserveAspectRatio;
-  }
 
   return clean;
 }
